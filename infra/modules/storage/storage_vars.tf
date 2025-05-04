@@ -7,7 +7,8 @@
 */
 locals {
     #BUCKET NAMES
-    #variavel_nome_bucket = "nome-unico-para-o-bucket"
+    #nome_bucket = "nome-unico-para-o-bucket"
+    #tmp_nome_bucket = "nome-unico-para-o-bucket-temporario"
     ####################################################
 }
 #__________________________________________________________
