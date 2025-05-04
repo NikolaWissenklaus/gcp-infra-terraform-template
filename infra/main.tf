@@ -2,7 +2,7 @@
 ###########################################################
 terraform {
   backend "gcs" {
-    bucket  = "bucket_terraform_states_geral"
+    bucket  = "nome_bucket_terraform_states"
     prefix  = "infraestrutura/dev"   # caminho dentro do bucket
   }
   required_providers {
@@ -21,6 +21,5 @@ provider "google" {
 module "storage" {
   source = "./modules/storage"
   project_id = var.project_id
-  sigla_solucao = var.sigla_solucao
   region = var.region
 }
