@@ -1,26 +1,18 @@
 /*
     Adicionar variáveis relacionadas ao 
-    BigQuery no bloco locals {}
+    BigQuery no arquivo locals
 
-    As variáveis globais são definidas nos
-    blocos variable
+    As variáveis globais são definidas no
+    arquivo variable
 */
-locals {
-    #DATASET NAMES
-    #nome_dataset = "nome_do_dataset"
-    ###############################################
-    #TABLE NAMES
-    #nome_tabela = "nome_da_tabela"
-    ###############################################
-}
 #__________________________________________________________
-
+#Valor recebido pelo main.tf
 variable "project_id" {
   description = "ID do projeto GCP"
   type        = string
 }
 #__________________________________________________________
-
+#Valor recebido pelo main.tf
 variable "region" {
   description = "Região"
   type        = string
